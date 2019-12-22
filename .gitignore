@@ -1,0 +1,3 @@
+config.core.php
+.idea/
+core/components/scheduler_awsbackup/vendor/
