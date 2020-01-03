@@ -29,21 +29,21 @@ Rotates files, keeping copies for daily and weekly backups, keeping one daily co
 For example, given a file named `database.sql` and `files.zip`, the following structure will be created in the bucket:
 
 - site_host.name
--- Mon
---- database.sql
---- files.zip
--- Tue
---- database.sql
---- files.zip
--- Wed
---- database.sql
---- files.zip
--- .. Thu, Fri, Sat,Sun
--- week-11
---- database.sql
---- files.zip
--- week-12
---- database.sql
---- files.zip
+    - Mon
+        - database.sql
+        - files.zip
+    - Tue
+        - database.sql
+        - files.zip
+    - Wed
+        - database.sql
+        - files.zip
+    - .. Thu, Fri, Sat, Sun
+    - week-11
+        - database.sql
+        - files.zip
+    - week-12
+        - database.sql
+        - files.zip
 
 You can define one path to sync with the `scheduler_awsbackup.rotate_sync_path` system setting. That could be `/abs/path/to/core/export/` or a server level backup directory, for example. If you want to upload several paths, consider using a task that moves them into a single location.
