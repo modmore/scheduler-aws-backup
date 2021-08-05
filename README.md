@@ -2,6 +2,8 @@
 
 Task to be used with [Scheduler](https://modmore.com/extras/scheduler/) that backs up site information to an AWS S3 bucket.
 
+Install the [Guzzle7](https://modx.com/extras/package/guzzle7) package to use.
+
 Tested with files up to 1GB. 
 
 ## Configuration

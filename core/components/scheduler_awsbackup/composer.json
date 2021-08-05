@@ -1,6 +1,8 @@
 {
     "require": {
-        "league/flysystem-aws-s3-v3": "^1.0",
-        "guzzlehttp/guzzle": "6.4.*"
+        "league/flysystem-aws-s3-v3": "^1.0"
+    },
+    "replace": {
+        "guzzlehttp/guzzle": "*"
     }
 }
